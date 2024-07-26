@@ -1,0 +1,6 @@
+flask 
+werkzeug 
+chromadb
+open-clip-torch
+cmake
+face-recognition

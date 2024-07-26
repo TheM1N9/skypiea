@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skypiea Cloud Storage</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload File</h1>
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <h1>All Uploaded Files</h1>
+        <div id="uploadedFiles"></div>
+
+        <h1>Detected Faces</h1>
+        <div id="detectedFaces"></div>
+
+        <h1>Search Files</h1>
+        <form id="searchForm" action="/search" method="POST">
+            <input type="text" name="query" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div>
+    </div>
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
